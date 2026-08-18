@@ -8,23 +8,31 @@ import UnderConstruction from "@/pages/UnderConstruction/UnderConstruction";
 const MainLayout = () => {
     const location = useLocation();
     const showUnderConstruction = location.pathname == PATHS.UNDER_CONSTRUCTION;
+    const isUnderConstruction = true;
 
     return (
         <>
             {
-                showUnderConstruction
+                !isUnderConstruction
                     ?
                     (
-                        <UnderConstruction />
+                        showUnderConstruction
+                            ?
+                            (
+                                <UnderConstruction />
+                            )
+                            :
+                            (
+                                <>
+                                    <Header />
+                                    <Outlet />
+                                    <Footer />
+                                </>
+                            )
                     )
                     :
-                    (
-                        <>
-                            <Header />
-                            <Outlet />
-                            <Footer />
-                        </>
-                    )
+                    <UnderConstruction />
+
             }
             <Analytics />
         </>
