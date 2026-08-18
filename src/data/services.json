@@ -1,0 +1,67 @@
+[
+	{
+		"id": "srv-01",
+		"title": "Music Production",
+		"description": "End-to-end electronic music arrangement, synth design, beat programming, and sound shaping across Eurobeat, Synthwave, Eurodance, and G-Funk.",
+		"iconName": "sliders",
+		"featured": true,
+		"deliverables": [
+			"Full arrangement & track assembly",
+			"Custom synth patching",
+			"Multi-track STEM export"
+		],
+		"ctaText": "TRANSMIT PRODUCTION BRIEF"
+	},
+	{
+		"id": "srv-02",
+		"title": "Mixing & Mastering",
+		"description": "Professional sonic balancing, analog tape/tube warmth emulation, dynamic control, stereo widening, and high-loudness radio mastering.",
+		"iconName": "radio",
+		"featured": true,
+		"deliverables": [
+			"WAV 24-bit 48kHz master",
+			"Streaming-ready LUFS calibration",
+			"Instrumental & Accapella versions"
+		],
+		"ctaText": "SEND TRACK FOR MIXING"
+	},
+	{
+		"id": "srv-03",
+		"title": "Composition & Score",
+		"description": "Cinematic retro-futuristic themes, shortwave station jingles, loopable video game/media background tracks, and evocative nocturnal scores.",
+		"iconName": "music",
+		"featured": false,
+		"deliverables": [
+			"Custom melodic themes",
+			"Seamless loop points",
+			"Stems & MIDI data"
+		],
+		"ctaText": "COMMISSION SCORE"
+	},
+	{
+		"id": "srv-04",
+		"title": "Vocal Editing & Tuning",
+		"description": "Precision vocal pitch correction, timing alignment, noise reduction, vocal chop design, and multi-layer harmony processing.",
+		"iconName": "mic",
+		"featured": false,
+		"deliverables": [
+			"Aligned & tuned lead vocal stems",
+			"Processed vocal chops & FX",
+			"Stereo vocal bus group"
+		],
+		"ctaText": "SEND VOCALS"
+	},
+	{
+		"id": "srv-05",
+		"title": "Custom Beat Production",
+		"description": "Tailor-made beat creation in specific tempos, genres, and energy levels with custom percussion, synth basslines, and melodic hooks.",
+		"iconName": "activity",
+		"featured": true,
+		"deliverables": [
+			"Exclusive beat license option",
+			"Uncompressed WAV & STEMS",
+			"Custom tempo/key modifications"
+		],
+		"ctaText": "REQUEST CUSTOM BEAT"
+	}
+]

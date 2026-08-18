@@ -1,0 +1,83 @@
+[
+	{
+		"id": "eq-01",
+		"name": "FL Studio",
+		"category": "DAWs",
+		"description": "Primary beat sequencing, fast step MIDI arranging, and synth pattern orchestration.",
+		"type": "Digital Audio Workstation",
+		"status": "ONLINE",
+        "slug": "fl-studio"
+	},
+	{
+		"id": "eq-02",
+		"name": "REAPER",
+		"category": "DAWs",
+		"description": "Precision multitrack audio recording, deep mixing routing, and mastering sessions.",
+		"type": "Digital Audio Workstation",
+		"status": "ONLINE",
+        "slug": "reaper"
+	},
+	{
+		"id": "eq-03",
+		"name": "PreSonus Audiobox USB 96",
+		"category": "Hardware",
+		"description": "24-bit/192kHz low-latency AD/DA converters for clean vocal and instrument capture.",
+		"type": "Audio Interface",
+		"status": "CALIBRATED",
+        "slug": "presonus-audiobox"
+	},
+	{
+		"id": "eq-04",
+		"name": "Akai Mpk Mini MK3",
+		"category": "Hardware",
+		"description": "Velocity-sensitive keys, pitch/mod wheels and assignable rotary encoders for live synth modulation.",
+		"type": "MIDI Keyboard Controller",
+		"status": "CALIBRATED",
+        "slug": "mpk-mini"
+	},
+	{
+		"id": "eq-05",
+		"name": "Electric Guitar & Tube Amp",
+		"category": "Hardware",
+		"description": "Electric guitar and high-gain tube amp setup for driving Eurobeat guitar riffs and synthwave solos.",
+		"type": "Instruments & Amplification",
+		"status": "CALIBRATED",
+        "slug": "electric-guitar"
+	},
+	{
+		"id": "eq-06",
+		"name": "Acoustic Guitar",
+		"category": "Hardware",
+		"description": "Natural string tones for melodic layers, chord progressions, organic textures, and intimate acoustic passages within electronic productions.",
+		"type": "Instruments & Amplification",
+		"status": "CALIBRATED",
+        "slug": "acoustic-guitar"
+	},
+	{
+		"id": "eq-07",
+		"name": "Vox Stomplab Iig 2g",
+		"category": "Hardware",
+		"description": "Digital multi-effects processor for real-time guitar cab emulation, choruses, and analog delay loops.",
+		"type": "FX Processor",
+		"status": "CALIBRATED",
+        "slug": "vox-stomplab"
+	},
+	{
+		"id": "eq-08",
+		"name": "Shure SV200 Microphone",
+		"category": "Hardware",
+		"description": "Microphone for vocals, ambient sound capture, and voiceovers.",
+		"type": "Microphone",
+		"status": "CALIBRATED",
+        "slug": "shure-mic"
+	},
+	{
+		"id": "eq-09",
+		"name": "Acoustic Ocarina",
+		"category": "Hardware",
+		"description": "Ceramic wind instrument used for secret organic acoustic melodies hidden in nocturnal electronic textures.",
+		"type": "Acoustic Wind Instrument",
+		"status": "CALIBRATED",
+        "slug": "ocarina"
+	}
+]

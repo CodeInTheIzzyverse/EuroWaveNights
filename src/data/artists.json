@@ -1,0 +1,22 @@
+[
+	{
+		"id": "latepassenger",
+		"name": "LatePassenger",
+		"tagline": "Anonymous electronic music from somewhere after midnight.",
+		"anonymous": true,
+		"description": "LatePassenger travels through an unnamed futuristic city, observes its streets, trains, windows, rain, neon lights and lonely places, and sends those memories to EuroWave Nights.",
+		"longDescription": "Nobody knows who operates EuroWave Nights or who LatePassenger is. Transmitting from hidden frequencies after midnight, LatePassenger crafts nostalgic, high-energy, and melancholic electronic landscapes combining Eurobeat acceleration, Synthwave nocturnal atmospheres, G-Funk basslines, and Lo-Fi urban textures.",
+		"genres": [
+			"Eurobeat",
+			"Eurodance",
+			"Synthwave",
+			"G-Funk",
+			"Lo-Fi Hip-Hop",
+			"Hi-NRG"
+		],
+		"route": "/latepassenger",
+		"featuredTrackId": "tr-01",
+		"transmissionFrequency": "104.8 MHz",
+		"status": "ACTIVE"
+	}
+]

@@ -1,0 +1,65 @@
+.underConstructionPage {
+	min-height: 80vh;
+	padding-top: $space-3xl;
+	padding-bottom: $space-4xl;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	&__container {
+		max-width: 640px;
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	&__header {
+		font-family: $font-pixel;
+		font-size: 0.85rem;
+		color: $color-warning;
+		margin-bottom: $space-md;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: $space-lg;
+	}
+
+	h1 {
+		font-family: $font-title;
+		font-style: italic;
+		font-size: clamp(2rem, 5vw, 3.2rem);
+		color: $color-text;
+		margin-bottom: $space-sm;
+	}
+
+	p {
+		font-size: 1.1rem;
+		color: $color-text-secondary;
+		margin-bottom: $space-2xl;
+	}
+
+	&__loading {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 6px;
+
+		.bar-cell {
+			width: 12px;
+			height: 28px;
+			background-color: $color-surface-alt;
+			border: 1px solid $color-border;
+			border-radius: 2px;
+
+			&.active {
+				background-color: $color-primary;
+				box-shadow: $glow-blue;
+			}
+
+			&.active-pink {
+				background-color: $color-accent;
+				box-shadow: $glow-pink;
+			}
+		}
+	}
+}

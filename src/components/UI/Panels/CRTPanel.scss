@@ -1,0 +1,60 @@
+.crtPanel {
+	background-color: $color-bg-alt;
+	border: 1px solid $color-border;
+	border-radius: $radius-lg;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 0 16px 40px rgba(2, 6, 17, 0.9);
+
+	&::before {
+		content: "";
+		position: absolute;
+		inset: 0;
+		background: linear-gradient(
+			rgba(18, 16, 16, 0) 50%,
+			rgba(0, 0, 0, 0.25) 50%
+		);
+		background-size: 100% 4px;
+		z-index: 2;
+		pointer-events: none;
+		opacity: 0.5;
+	}
+
+	&_inner {
+		position: relative;
+		z-index: 1;
+		padding: $space-xl;
+	}
+
+	&__cornerDecor {
+		position: absolute;
+		width: 12px;
+		height: 12px;
+		border-color: $color-primary;
+		border-style: solid;
+		pointer-events: none;
+		z-index: 3;
+		opacity: 0.8;
+
+		&.top-left {
+			top: 12px;
+			left: 12px;
+			border-width: 2px 0 0 2px;
+		}
+		&.top-right {
+			top: 12px;
+			right: 12px;
+			border-width: 2px 2px 0 0;
+		}
+		&.bottom-left {
+			bottom: 12px;
+			left: 12px;
+			border-width: 0 0 2px 2px;
+		}
+		&.bottom-right {
+			bottom: 12px;
+			right: 12px;
+			border-width: 0 2px 2px 0;
+		}
+	}
+}

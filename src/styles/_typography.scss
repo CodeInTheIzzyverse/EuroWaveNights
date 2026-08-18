@@ -1,0 +1,110 @@
+@use "vars" as *;
+
+.font-title {
+	font-family: $font-title;
+	font-style: italic;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: -0.02em;
+}
+
+.font-body {
+	font-family: $font-body;
+}
+
+.font-pixel {
+	font-family: $font-pixel;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+.font-script {
+	font-family: $font-script;
+	font-weight: 400;
+}
+
+// Headings
+h1,
+.h1 {
+	font-family: $font-title;
+	font-style: italic;
+	font-weight: 800;
+	font-size: clamp(2rem, 5vw, 3.75rem);
+	line-height: 1.1;
+	color: $color-text;
+	text-transform: uppercase;
+}
+
+h2,
+.h2 {
+	font-family: $font-title;
+	font-style: italic;
+	font-weight: 700;
+	font-size: clamp(1.5rem, 3.5vw, 2.5rem);
+	line-height: 1.2;
+	color: $color-text;
+	text-transform: uppercase;
+}
+
+h3,
+.h3 {
+	font-family: $font-title;
+	font-style: italic;
+	font-weight: 700;
+	font-size: clamp(1.2rem, 2.5vw, 1.75rem);
+	line-height: 1.3;
+	color: $color-text;
+}
+
+h4,
+.h4 {
+	font-family: $font-body;
+	font-weight: 700;
+	font-size: 1.125rem;
+	line-height: 1.4;
+	color: $color-text;
+}
+
+p,
+.body-text {
+	font-family: $font-body;
+	font-size: 1rem;
+	line-height: 1.6;
+	color: $color-text-secondary;
+}
+
+.text-muted {
+	color: $color-text-tertiary;
+}
+
+.text-pixel-sm {
+	font-family: $font-pixel;
+	font-size: 0.75rem;
+	line-height: 1.2;
+	letter-spacing: 0.08em;
+}
+
+.text-pixel-xs {
+	font-family: $font-pixel;
+	font-size: 0.65rem;
+	line-height: 1.2;
+	letter-spacing: 0.05em;
+}
+
+.text-gradient-primary {
+	background: $gradient-primary;
+    background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.text-gradient-aurora {
+	background: $gradient-aurora;
+    background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.text-accent-pink {
+	color: $color-accent;
+}
