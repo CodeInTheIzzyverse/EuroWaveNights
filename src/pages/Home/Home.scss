@@ -22,11 +22,19 @@
 			display: grid;
 			grid-template-columns: 1fr;
 			gap: $space-3xl;
+			align-items: center;
 
 			@include respond-to("desktop-sm") {
-				grid-template-columns: 1.1fr 0.9fr;
+				grid-template-columns: 1fr 1fr;
 			}
 		}
+
+		.shortwaveRadio {
+			@include respond-to("desktop-sm") {
+				grid-template-columns: 1fr;
+			}
+		}
+
 
 		&__content {
 			.transmissionStatus {

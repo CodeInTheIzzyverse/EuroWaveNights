@@ -16,12 +16,13 @@
 	max-width: 100%;
 	box-sizing: border-box;
 
-	@media (min-width: 520px) {
+	@media (min-width: 640px) {
 		flex-direction: row;
 		align-items: center;
 		gap: $space-md;
 		padding: 6px 14px;
 		font-size: 0.72rem;
+		width: fit-content;
 	}
 
 	&.statusCompact {
@@ -37,23 +38,21 @@
 		align-items: center;
 		gap: 6px;
 		color: $color-success;
+		flex-shrink: 0;
 	}
 
 	.status__label {
 		color: $color-text;
 		font-weight: 700;
+		white-space: nowrap;
 	}
 
 	.status__meta {
 		display: flex;
 		align-items: center;
-		flex-wrap: wrap;
-		gap: $space-xs;
+		gap: $space-sm;
 		color: $color-text-tertiary;
-
-		@media (min-width: 520px) {
-			gap: $space-sm;
-		}
+		white-space: nowrap;
 
 		@media (max-width: 640px) {
 			&.hide__mobile {
@@ -70,3 +69,4 @@
 		color: $color-primary;
 	}
 }
+
