@@ -1,0 +1,54 @@
+.channelCard {
+	display: flex;
+	align-items: center;
+	gap: $space-sm;
+	padding: 10px 12px;
+	background-color: $color-surface;
+	border: 1px solid $color-border-light;
+	border-radius: $radius-sm;
+	transition: all $transition-fast;
+	text-decoration: none;
+
+	&:hover {
+		background-color: $color-surface-alt;
+		border-color: $color-primary;
+		transform: translateX(4px);
+
+		.channelCard__icon {
+			color: $color-accent;
+			border-color: $color-accent;
+		}
+
+		.channelCard__arrow {
+			color: $color-accent;
+			transform: translate(2px, -2px);
+		}
+	}
+
+	&__icon {
+		width: 32px;
+		height: 32px;
+		border-radius: $radius-sm;
+		background-color: $color-card;
+		border: 1px solid $color-border;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: $color-primary;
+		flex-shrink: 0;
+		transition: all $transition-fast;
+	}
+
+	&__name {
+		font-family: $font-title;
+		font-size: 0.95rem;
+		font-weight: 600;
+		color: $color-text;
+	}
+
+	&__arrow {
+		color: $color-text-tertiary;
+		flex-shrink: 0;
+		transition: all $transition-fast;
+	}
+}

@@ -1,0 +1,72 @@
+.links {
+	min-height: 80vh;
+	padding-top: $space-3xl;
+	padding-bottom: $space-4xl;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	&__wrapper {
+		width: 100%;
+		max-width: 520px;
+		margin: 0 auto;
+	}
+
+	&__header {
+		text-align: center;
+		margin-bottom: $space-2xl;
+	}
+
+	&__avatar {
+		width: 88px;
+		height: 88px;
+		margin: 0 auto $space-md auto;
+		border-radius: $radius-xl;
+		background: linear-gradient(
+			135deg,
+			$color-surface-alt 0%,
+			$color-surface 100%
+		);
+		border: 2px solid $color-border-strong;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: $color-primary;
+		box-shadow: $glow-blue;
+
+        svg {
+            width: 40px;
+        }
+	}
+
+	h1 {
+		font-family: $font-title;
+		font-style: italic;
+		font-size: 2.2rem;
+		color: $color-text;
+		text-transform: uppercase;
+		margin-bottom: 2px;
+	}
+
+	&__tag {
+		font-family: $font-pixel;
+		font-size: 0.72rem;
+		color: $color-accent;
+		margin-bottom: $space-sm;
+	}
+
+	&__bio {
+		color: $color-text-secondary;
+		font-size: 0.95rem;
+	}
+
+	&__links {
+		display: flex;
+		flex-direction: column;
+		gap: $space-md;
+
+        .channelCard__arrow {
+            margin-left: auto;
+        }
+	}
+}

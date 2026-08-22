@@ -7,5 +7,5 @@ export interface Equipment {
 	description: string;
 	type: string;
 	status: "ONLINE" | "ACTIVE" | "CALIBRATED";
-	slug: string;
+	iconName: string;
 }

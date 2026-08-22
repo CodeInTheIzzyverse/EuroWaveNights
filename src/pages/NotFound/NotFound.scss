@@ -1,0 +1,66 @@
+.notFound {
+	min-height: 80vh;
+	padding-top: $space-3xl;
+	padding-bottom: $space-4xl;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	.crtPanel {
+		max-width: 600px;
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	&__badge {
+		font-family: $font-pixel;
+		font-size: 0.85rem;
+		color: $color-error;
+		margin-bottom: $space-sm;
+	}
+
+	h1 {
+		font-family: $font-title;
+		font-style: italic;
+		font-size: clamp(2.2rem, 6vw, 3.8rem);
+		color: $color-text;
+		margin-bottom: $space-xs;
+		text-transform: uppercase;
+	}
+
+	p {
+		font-size: 1.1rem;
+		color: $color-text-secondary;
+		margin-bottom: $space-xl;
+	}
+
+	&__grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: $space-md;
+		background-color: $color-surface;
+		border: 1px solid $color-border;
+		border-radius: $radius-md;
+		padding: $space-md;
+		margin-bottom: $space-2xl;
+		text-align: left;
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+
+		.lbl {
+			font-family: $font-pixel;
+			font-size: 0.65rem;
+			color: $color-text-tertiary;
+		}
+
+		.val {
+			font-family: $font-pixel;
+			font-size: 0.8rem;
+			color: $color-error;
+		}
+	}
+}

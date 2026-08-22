@@ -1,0 +1,48 @@
+@use "@/styles/vars" as *;
+@use "@/styles/mixins" as *;
+
+.sectionHeader {
+	margin-bottom: $space-2xl;
+	position: relative;
+
+	&.align-center {
+		text-align: center;
+		.header__badge__wrapper {
+			justify-content: center;
+		}
+	}
+
+	.header__badge__wrapper {
+		display: flex;
+		align-items: center;
+		gap: $space-sm;
+		margin-bottom: $space-sm;
+	}
+
+	.header__frequency__tag {
+		font-family: $font-pixel;
+		font-size: 0.7rem;
+		color: $color-accent;
+		background-color: rgba(255, 95, 191, 0.1);
+		border: 1px solid rgba(255, 95, 191, 0.3);
+		padding: 3px 8px;
+		border-radius: $radius-sm;
+	}
+
+	.header__title {
+		margin-bottom: $space-xs;
+		font-size: clamp(1.6rem, 3.5vw, 2.6rem);
+	}
+
+	.header__subtitle {
+		max-width: 680px;
+		font-size: 1.05rem;
+		color: $color-text-secondary;
+		margin-top: $space-xs;
+
+		&.center {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+}

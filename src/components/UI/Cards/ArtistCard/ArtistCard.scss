@@ -1,0 +1,71 @@
+.artistCard {
+	background-color: $color-card;
+	border: 1px solid $color-border;
+	border-radius: $radius-lg;
+	padding: $space-xl;
+	position: relative;
+	overflow: hidden;
+	transition: all $transition-normal;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	&:hover {
+		background-color: $color-card-hover;
+		border-color: $color-border-strong;
+		box-shadow: $glow-blue;
+		transform: translateY(-4px);
+	}
+
+	&__badge {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: $space-md;
+	}
+
+	&__freq {
+		font-family: $font-pixel;
+		font-size: 0.7rem;
+		color: $color-primary;
+	}
+
+	&__title {
+		margin-bottom: $space-md;
+
+		h3 {
+			font-family: $font-title;
+			font-style: italic;
+			font-size: 1.8rem;
+			color: $color-text;
+			margin-bottom: 2px;
+		}
+
+		p {
+			font-family: $font-pixel;
+			font-size: 0.72rem;
+			color: $color-text-tertiary;
+			letter-spacing: 0.05em;
+		}
+	}
+
+	& > p {
+		color: $color-text-secondary;
+		font-size: 0.95rem;
+		line-height: 1.6;
+		margin-bottom: $space-lg;
+	}
+
+	&__genres {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 6px;
+		margin-bottom: $space-xl;
+	}
+
+	&__footer {
+		margin-top: auto;
+		padding-top: $space-md;
+		border-top: 1px solid $color-border-light;
+	}
+}

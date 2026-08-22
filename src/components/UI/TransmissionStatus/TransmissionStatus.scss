@@ -1,0 +1,54 @@
+.transmissionStatus {
+	display: inline-flex;
+	align-items: center;
+	gap: $space-md;
+	padding: 6px 14px;
+	background-color: $color-surface;
+	border: 1px solid $color-border;
+	border-radius: $radius-md;
+	font-family: $font-pixel;
+	font-size: 0.72rem;
+	letter-spacing: 0.05em;
+	color: $color-text-secondary;
+	position: relative;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+
+	&.status__compact {
+		padding: 4px 10px;
+		font-size: 0.65rem;
+		gap: $space-sm;
+	}
+
+	.statusDot__wrapper {
+		display: flex;
+		align-items: center;
+		gap: 6px;
+		color: $color-success;
+	}
+
+	.status__label {
+		color: $color-text;
+		font-weight: 700;
+	}
+
+	.status__meta {
+		display: flex;
+		align-items: center;
+		gap: $space-sm;
+		color: $color-text-tertiary;
+
+		@media (max-width: 640px) {
+			&.hide__mobile {
+				display: none;
+			}
+		}
+	}
+
+	.status__divider {
+		color: $color-border-strong;
+	}
+
+	.signal__val {
+		color: $color-primary;
+	}
+}

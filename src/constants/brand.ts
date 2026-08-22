@@ -1,6 +1,6 @@
 export const BRAND = {
 	NAME: "EUROWAVE NIGHTS",
-	SLOGAN: "Illegal ",
+	SLOGAN: "Illegal midnight broadcasts from an unnamed city.",
 	SUBTITLE:
 		"A clandestine transmission for forgotten nights, anonymous artists and electronic sounds.",
 	TRANSMISSION_HOURS: "00:00 — 05:00",

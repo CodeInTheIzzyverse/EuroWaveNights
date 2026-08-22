@@ -1,0 +1,64 @@
+.pixelWindow {
+	background-color: $color-surface;
+	border: 2px solid $color-border-strong;
+	border-radius: $radius-md;
+	box-shadow:
+		0 12px 30px rgba(0, 0, 0, 0.7),
+		inset -2px -2px 0px 0px rgba(0, 0, 0, 0.4),
+		inset 2px 2px 0px 0px rgba(255, 255, 255, 0.08);
+	overflow: hidden;
+	position: relative;
+
+	&__titlebar {
+		background: linear-gradient(
+			90deg,
+			$color-surface-alt 0%,
+			$color-card-hover 100%
+		);
+		border-bottom: 2px solid $color-border;
+		padding: 8px 12px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		user-select: none;
+	}
+
+	&__title {
+		font-family: $font-pixel;
+		font-size: 0.72rem;
+		letter-spacing: 0.06em;
+		color: $color-text-secondary;
+		display: flex;
+		align-items: center;
+		gap: $space-sm;
+	}
+
+	&__controls {
+		display: flex;
+		align-items: center;
+		gap: 6px;
+
+		.ctrl-btn {
+			width: 10px;
+			height: 10px;
+			border-radius: 2px;
+			border: 1px solid rgba(255, 255, 255, 0.2);
+
+			&.ctrl-min {
+				background-color: $color-warning;
+			}
+			&.ctrl-max {
+				background-color: $color-success;
+			}
+			&.ctrl-close {
+				background-color: $color-error;
+			}
+		}
+	}
+
+	&__content {
+		padding: $space-lg;
+		position: relative;
+		z-index: 1;
+	}
+}

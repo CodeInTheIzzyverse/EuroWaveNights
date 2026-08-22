@@ -4,14 +4,20 @@ import Footer from "./Footer/Footer";
 import { Analytics } from "@vercel/analytics/react";
 import { PATHS } from "@/constants/routes";
 import UnderConstruction from "@/pages/UnderConstruction/UnderConstruction";
+import { useEffect } from "react";
 
 const MainLayout = () => {
     const location = useLocation();
     const showUnderConstruction = location.pathname == PATHS.UNDER_CONSTRUCTION;
-    const isUnderConstruction = true;
+    const isUnderConstruction = false;
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [location]);
 
     return (
         <>
+            <div className="crt-overlay" aria-hidden="true" />
             {
                 !isUnderConstruction
                     ?

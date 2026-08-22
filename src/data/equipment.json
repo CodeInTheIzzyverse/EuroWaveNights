@@ -6,7 +6,7 @@
 		"description": "Primary beat sequencing, fast step MIDI arranging, and synth pattern orchestration.",
 		"type": "Digital Audio Workstation",
 		"status": "ONLINE",
-        "slug": "fl-studio"
+        "iconName": "Cpu"
 	},
 	{
 		"id": "eq-02",
@@ -15,7 +15,7 @@
 		"description": "Precision multitrack audio recording, deep mixing routing, and mastering sessions.",
 		"type": "Digital Audio Workstation",
 		"status": "ONLINE",
-        "slug": "reaper"
+        "iconName": "HardDrive"
 	},
 	{
 		"id": "eq-03",
@@ -24,7 +24,7 @@
 		"description": "24-bit/192kHz low-latency AD/DA converters for clean vocal and instrument capture.",
 		"type": "Audio Interface",
 		"status": "CALIBRATED",
-        "slug": "presonus-audiobox"
+        "iconName": "Server"
 	},
 	{
 		"id": "eq-04",
@@ -33,7 +33,7 @@
 		"description": "Velocity-sensitive keys, pitch/mod wheels and assignable rotary encoders for live synth modulation.",
 		"type": "MIDI Keyboard Controller",
 		"status": "CALIBRATED",
-        "slug": "mpk-mini"
+        "iconName": "Grid"
 	},
 	{
 		"id": "eq-05",
@@ -42,7 +42,7 @@
 		"description": "Electric guitar and high-gain tube amp setup for driving Eurobeat guitar riffs and synthwave solos.",
 		"type": "Instruments & Amplification",
 		"status": "CALIBRATED",
-        "slug": "electric-guitar"
+        "iconName": "Guitar"
 	},
 	{
 		"id": "eq-06",
@@ -51,7 +51,7 @@
 		"description": "Natural string tones for melodic layers, chord progressions, organic textures, and intimate acoustic passages within electronic productions.",
 		"type": "Instruments & Amplification",
 		"status": "CALIBRATED",
-        "slug": "acoustic-guitar"
+        "iconName": "Guitar"
 	},
 	{
 		"id": "eq-07",
@@ -60,7 +60,7 @@
 		"description": "Digital multi-effects processor for real-time guitar cab emulation, choruses, and analog delay loops.",
 		"type": "FX Processor",
 		"status": "CALIBRATED",
-        "slug": "vox-stomplab"
+        "iconName": "Sliders"
 	},
 	{
 		"id": "eq-08",
@@ -69,7 +69,7 @@
 		"description": "Microphone for vocals, ambient sound capture, and voiceovers.",
 		"type": "Microphone",
 		"status": "CALIBRATED",
-        "slug": "shure-mic"
+        "iconName": "Mic"
 	},
 	{
 		"id": "eq-09",
@@ -78,6 +78,6 @@
 		"description": "Ceramic wind instrument used for secret organic acoustic melodies hidden in nocturnal electronic textures.",
 		"type": "Acoustic Wind Instrument",
 		"status": "CALIBRATED",
-        "slug": "ocarina"
+        "iconName": "Feather"
 	}
 ]

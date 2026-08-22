@@ -1,1 +1,22 @@
-[]
+[
+	{
+		"id": "tr-01",
+		"title": "Midnight Highway Express",
+		"type": "SINGLE",
+		"category": "SINGLES",
+		"genre": "Eurobeat / Synthwave",
+		"year": 2026,
+		"duration": "03:48",
+		"artistId": "latepassenger",
+		"artistName": "LatePassenger",
+		"coverArt": "express",
+		"description": "High-octane synth bass and driving 155 BPM rhythms passing elevated highway lights at 3:00 AM.",
+		"featured": true,
+		"frequency": "104.8 MHz",
+		"bpm": 155,
+		"key": "Fm",
+		"spotifyUrl": "#",
+		"youtubeUrl": "#",
+		"bandcampUrl": "#"
+	}
+]

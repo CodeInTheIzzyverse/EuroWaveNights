@@ -1,0 +1,95 @@
+.serviceCard {
+	background-color: $color-card;
+	border: 1px solid $color-border;
+	border-radius: $radius-lg;
+	padding: $space-xl;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	transition: all $transition-normal;
+	position: relative;
+	overflow: hidden;
+
+	&:hover {
+		background-color: $color-card-hover;
+		border-color: $color-border-strong;
+		box-shadow: $glow-blue;
+		transform: translateY(-3px);
+
+		.service__icon {
+			border-color: $color-accent;
+			color: $color-accent;
+			box-shadow: $glow-pink;
+		}
+	}
+
+	&__header {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		margin-bottom: $space-lg;
+	}
+
+	&__icon {
+		width: 48px;
+		height: 48px;
+		border: 2px solid $color-border-strong;
+		background-color: $color-surface;
+		border-radius: $radius-md;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: $color-primary;
+		transition: all $transition-fast;
+	}
+
+	&__num {
+		font-family: $font-pixel;
+		font-size: 0.75rem;
+		color: $color-text-tertiary;
+	}
+
+	&__body {
+		h3 {
+			font-family: $font-title;
+			font-style: italic;
+			font-size: 1.5rem;
+			color: $color-text;
+			margin-bottom: $space-xs;
+		}
+
+		p {
+			color: $color-text-secondary;
+			font-size: 0.95rem;
+			line-height: 1.6;
+			margin-bottom: $space-lg;
+		}
+	}
+
+	&__deliverables {
+		list-style: none;
+		margin-bottom: $space-xl;
+
+		li {
+			font-family: $font-body;
+			font-size: 0.88rem;
+			color: $color-text-tertiary;
+			display: flex;
+			align-items: center;
+			gap: $space-sm;
+			margin-bottom: 6px;
+
+			&::before {
+				content: "▪";
+				color: $color-accent;
+				font-size: 0.8rem;
+			}
+		}
+	}
+
+	&__footer {
+		margin-top: auto;
+		padding-top: $space-md;
+		border-top: 1px solid $color-border-light;
+	}
+}

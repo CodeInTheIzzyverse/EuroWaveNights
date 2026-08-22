@@ -1,0 +1,28 @@
+.featureCard {
+	background-color: $color-card;
+	border: 1px solid $color-border;
+	border-radius: $radius-lg;
+	padding: $space-xl;
+	position: relative;
+
+	span {
+		font-family: $font-pixel;
+		font-size: 0.72rem;
+		color: $color-primary;
+		margin-bottom: $space-sm;
+	}
+
+	h3 {
+		font-family: $font-title;
+		font-style: italic;
+		font-size: 1.35rem;
+		color: $color-text;
+		margin-bottom: $space-xs;
+	}
+
+    p {
+        font-size: 0.95rem;
+        color: $color-text-secondary;
+        line-height: 1.6;
+    }
+}
