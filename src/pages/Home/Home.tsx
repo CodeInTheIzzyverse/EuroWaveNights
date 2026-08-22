@@ -23,7 +23,7 @@ import featuresData from '@/data/features.json';
 
 // Types
 import type { Artist } from '@/types/artist';
-import type { MusicTrack } from '@/types/music';
+import type { Track } from '@/types/track';
 import type { Service } from '@/types/service';
 import type { Equipment } from '@/types/equipment';
 import type { Feature } from '@/types/feature';
@@ -38,14 +38,15 @@ const Home = () => {
     });
 
     const artists: Artist[] = artistsData as Artist[];
-    const tracks: MusicTrack[] = musicData as MusicTrack[];
+    const tracks: Track[] = musicData as Track[];
     const services: Service[] = servicesData as Service[];
     const equipment: Equipment[] = equipmentData as Equipment[];
     const features: Feature[] = featuresData as Feature[];
 
-    const [activeTrack, setActiveTrack] = useState<MusicTrack | null>(tracks[0] || null);
+    const [activeTrack, setActiveTrack] = useState<Track | null>(tracks[0] || null);
 
     const featuredTracks = tracks.filter((t) => t.featured);
+
     const dawequipment = equipment.filter((e) => e.category === 'DAWs');
     const pluginequipment = equipment.filter((e) => e.category === 'Plugins');
     const hardwareequipment = equipment.filter((e) => e.category === 'Hardware');

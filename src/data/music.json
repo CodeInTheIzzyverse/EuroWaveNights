@@ -3,7 +3,6 @@
 		"id": "tr-01",
 		"title": "Midnight Highway Express",
 		"type": "SINGLE",
-		"category": "SINGLES",
 		"genre": "Eurobeat / Synthwave",
 		"year": 2026,
 		"duration": "03:48",
@@ -15,8 +14,147 @@
 		"frequency": "104.8 MHz",
 		"bpm": 155,
 		"key": "Fm",
-		"spotifyUrl": "#",
-		"youtubeUrl": "#",
-		"bandcampUrl": "#"
+		"links": [
+			{
+				"platformId": "spotify",
+				"name": "Spotify",
+				"url": "#"
+			},
+			{
+				"platformId": "youtube",
+				"name": "YouTube",
+				"url": "#"
+			},
+			{
+				"platformId": "bandcamp",
+				"name": "Bandcamp",
+				"url": "#"
+			}
+		]
+	},
+	{
+		"id": "tr-02-01",
+		"title": "Sector 7 Entrance",
+		"type": "ALBUM_TRACK",
+		"genre": "Synthwave / Lo-Fi",
+		"year": 2025,
+		"duration": "04:15",
+		"artistId": "latepassenger",
+		"artistName": "LatePassenger",
+		"coverArt": "rain_sector",
+		"description": "Opening ambient nocturnal synth atmosphere as rain falls on neon pavement.",
+		"albumId": "alb-01",
+		"trackNumber": 1,
+		"featured": false,
+		"frequency": "102.4 MHz",
+		"bpm": 92,
+		"key": "Am",
+		"links": [
+			{
+				"platformId": "spotify",
+				"name": "Spotify",
+				"url": "#"
+			}
+		]
+	},
+	{
+		"id": "tr-02-02",
+		"title": "Wet Asphalt & Neon",
+		"type": "ALBUM_TRACK",
+		"genre": "Synthwave",
+		"year": 2025,
+		"duration": "05:10",
+		"artistId": "latepassenger",
+		"artistName": "LatePassenger",
+		"coverArt": "rain_sector",
+		"description": "Melancholic synth lead lines over warm analog basslines.",
+		"albumId": "alb-01",
+		"trackNumber": 2,
+		"featured": false,
+		"frequency": "102.4 MHz",
+		"bpm": 94,
+		"key": "Am",
+		"links": [
+			{
+				"platformId": "spotify",
+				"name": "Spotify",
+				"url": "#"
+			}
+		]
+	},
+	{
+		"id": "tr-03",
+		"title": "Neon Echoes & G-Funk Horizons",
+		"type": "SINGLE",
+		"genre": "G-Funk / Eurodance",
+		"year": 2025,
+		"duration": "04:12",
+		"artistId": "latepassenger",
+		"artistName": "LatePassenger",
+		"coverArt": "neon_gfunk",
+		"description": "Deep analog portamento leads blended with 90s Eurodance percussion and nocturnal synth pads.",
+		"featured": true,
+		"frequency": "106.1 MHz",
+		"bpm": 128,
+		"key": "Dm",
+		"links": [
+			{
+				"platformId": "spotify",
+				"name": "Spotify",
+				"url": "#"
+			},
+			{
+				"platformId": "youtube",
+				"name": "YouTube",
+				"url": "#"
+			}
+		]
+	},
+	{
+		"id": "tr-04",
+		"title": "02:34 AM Terminal Signal",
+		"type": "BEAT",
+		"genre": "Lo-Fi Hip-Hop",
+		"year": 2026,
+		"duration": "02:45",
+		"artistId": "latepassenger",
+		"artistName": "LatePassenger",
+		"coverArt": "terminal_beat",
+		"description": "Vintage sampler warmth, vinyl crackle, and soft Rhodes chords transmitted from an unmapped station.",
+		"featured": false,
+		"frequency": "98.5 MHz",
+		"bpm": 84,
+		"key": "G#m",
+		"links": [
+			{
+				"platformId": "bandcamp",
+				"name": "Bandcamp",
+				"url": "#"
+			}
+		]
+	},
+	{
+		"id": "tr-05",
+		"title": "Unmapped Monorail",
+		"type": "INSTRUMENTAL",
+		"genre": "Eurodance / Synthwave",
+		"year": 2025,
+		"duration": "05:04",
+		"artistId": "latepassenger",
+		"artistName": "LatePassenger",
+		"coverArt": "monorail",
+		"description": "Full instrumental arrangement featuring multi-layered analog leads, fast hi-hats and heavy sub bass.",
+		"featured": false,
+		"frequency": "101.9 MHz",
+		"bpm": 140,
+		"key": "Cm",
+		"links": [
+			{
+				"platformId": "soundcloud",
+				"name": "SoundCloud",
+				"url": "#"
+			}
+		]
 	}
 ]
+

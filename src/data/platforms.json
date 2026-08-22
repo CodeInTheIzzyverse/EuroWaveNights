@@ -1,0 +1,59 @@
+[
+	{
+		"id": "spotify",
+		"name": "Spotify",
+		"link": "https://open.spotify.com",
+		"icon": "spotify",
+		"isSocial": false
+	},
+	{
+		"id": "bandcamp",
+		"name": "Bandcamp",
+		"link": "https://latepassenger.bandcamp.com/",
+		"icon": "bandcamp",
+		"isSocial": false
+	},
+	{
+		"id": "soundcloud",
+		"name": "SoundCloud",
+		"link": "https://soundcloud.com/latepassengermusic",
+		"icon": "soundcloud",
+		"isSocial": false
+	},
+	{
+		"id": "youtube",
+		"name": "YouTube",
+		"link": "https://www.youtube.com/@EuroWaveNights",
+		"icon": "youtube",
+		"isSocial": false
+	},
+	{
+		"id": "instagram",
+		"name": "Instagram",
+		"link": "https://www.instagram.com/eurowave.nights/",
+		"icon": "instagram",
+		"isSocial": true
+	},
+	{
+		"id": "tiktok",
+		"name": "TikTok",
+		"link": "https://www.tiktok.com/@eurowave.nights",
+		"icon": "tiktok",
+		"isSocial": true
+	},
+	{
+		"id": "home",
+		"name": "EuroWave Nights Home",
+		"link": "/",
+		"icon": "home",
+		"isSocial": false
+	},
+	{
+		"id": "email",
+		"name": "Email",
+		"link": "mailto:latepassenger.music@outlook.com",
+		"icon": "email",
+		"isSocial": true
+	}
+]
+

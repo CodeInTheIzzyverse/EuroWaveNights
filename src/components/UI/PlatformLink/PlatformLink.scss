@@ -1,0 +1,54 @@
+.platformLink {
+	background-color: $color-card;
+	border: 1px solid $color-border;
+	border-radius: $radius-lg;
+	padding: $space-lg;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: $space-md;
+	text-decoration: none;
+	transition: all $transition-normal;
+
+	&:hover {
+		background-color: $color-card-hover;
+		border-color: $color-primary;
+		box-shadow: $glow-blue;
+		transform: translateY(-2px);
+
+		.platformLink__arrow {
+			color: $color-accent;
+			transform: translateX(4px);
+		}
+	}
+
+	&__left {
+		display: flex;
+		align-items: center;
+		gap: $space-md;
+
+		&__icon {
+			width: 44px;
+			height: 44px;
+			border-radius: $radius-md;
+			background-color: $color-surface;
+			border: 1px solid $color-border-strong;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: $color-primary;
+		}
+
+		&__name {
+			font-family: $font-title;
+			font-style: italic;
+			font-size: 1.2rem;
+			color: $color-text;
+		}
+	}
+
+	&__arrow {
+		color: $color-text-tertiary;
+		transition: all $transition-fast;
+	}
+}

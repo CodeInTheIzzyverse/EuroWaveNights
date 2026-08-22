@@ -326,6 +326,7 @@ React Router provides client-side navigation for:
 
 * `/`
 * `/latepassenger`
+* `/albums/:id`
 * `/contact`
 * `/links`
 * `/under-construction`
@@ -369,9 +370,9 @@ The styling system supports:
 
 ### Data-Driven Content
 
-Artists, music, projects, services, and equipment are represented as structured JSON data.
+Artists, albums, tracks, platforms, projects, services, and equipment are represented as structured JSON data (`albums.json`, `music.json`, `platforms.json`, etc.).
 
-This makes the platform easier to maintain and allows new content to be added without rewriting the underlying UI components.
+This modular design decouples music releases (albums vs. singles/tracks), centralizes platform broadcast metadata, and allows new content to be added without rewriting UI components.
 
 ### Cyberpunk Retro-Futuristic Design
 

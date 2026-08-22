@@ -9,6 +9,7 @@ import NotFound from '@/pages/NotFound/NotFound';
 import UnderConstruction from '@/pages/UnderConstruction/UnderConstruction';
 import Links from '@/pages/Links/Links';
 import LinearLoader from '@/components/UI/LinearLoader/LinearLoader';
+import AlbumDetails from '@/pages/AlbumDetails/AlbumDetails';
 
 export const router = createBrowserRouter([{
     path: PATHS.HOME,
@@ -25,6 +26,11 @@ export const router = createBrowserRouter([{
         {
             path: PATHS.LATE_PASSENGER, element: (
                 <Suspense fallback={<LinearLoader title="DECRYPTING PRODUCER ARCHIVE" subtitle="RETRIEVING LATEPASSENGER DISCOGRAPHY" />}><LatePassenger /></Suspense>
+            )
+        },
+        {
+            path: PATHS.ALBUM_DETAILS, element: (
+                <Suspense fallback={<LinearLoader title="DECRYPTING ALBUM MANIFEST" subtitle="LOADING TRACKLIST & ALBUM DETAILS" />}><AlbumDetails /></Suspense>
             )
         },
         {

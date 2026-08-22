@@ -1,6 +1,7 @@
 import type { Channel } from '@/types/channel';
 import './ChannelCard.scss';
 import { PATHS } from '@/constants/routes';
+import PlatformIcon from '@/components/UI/PlatformIcon/PlatformIcon';
 
 interface ChannelCardProps {
     channel: Channel;
@@ -10,8 +11,15 @@ const ChannelCard = ({ channel }: ChannelCardProps) => {
     let home = false;
     if (channel.link === PATHS.HOME) {
         home = true;
-        console.log(channel.link === PATHS.HOME)
     }
+
+    const renderIcon = () => {
+        if (!channel.icon) return null;
+        if (typeof channel.icon === 'string') {
+            return <PlatformIcon name={channel.icon} />;
+        }
+        return channel.icon;
+    };
 
     return (
         <a className="channelCard"
@@ -19,7 +27,7 @@ const ChannelCard = ({ channel }: ChannelCardProps) => {
             target={home ? '' : '_blank'}
             rel="noopener noreferrer"
         >
-            {channel.icon && <span className='channelCard__icon'>{channel.icon}</span>}
+            <span className='channelCard__icon'>{renderIcon()}</span>
 
             <span className='channelCard__name'>{channel.name}</span>
 

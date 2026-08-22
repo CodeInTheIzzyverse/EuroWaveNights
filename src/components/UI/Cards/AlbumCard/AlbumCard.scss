@@ -1,0 +1,129 @@
+@use "@/styles/mixins" as *;
+
+.albumCard {
+	background-color: $color-card;
+	border: 1px solid $color-border;
+	border-radius: $radius-lg;
+	padding: $space-xl;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: $space-xl;
+	transition: all $transition-normal;
+
+	@include respond-to("tablet") {
+		grid-template-columns: 240px 1fr;
+	}
+
+	&:hover {
+		border-color: $color-border-strong;
+		box-shadow: $glow-blue;
+	}
+
+	&__cover {
+		aspect-ratio: 1 / 1;
+		border-radius: $radius-md;
+		background: linear-gradient(
+			135deg,
+			$color-surface-alt 0%,
+			$color-bg 100%
+		);
+		border: 2px solid $color-border-strong;
+		position: relative;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		&__badge {
+			position: absolute;
+			top: 10px;
+			left: 10px;
+			font-family: $font-pixel;
+			font-size: 0.65rem;
+			background-color: rgba(7, 10, 22, 0.9);
+			border: 1px solid $color-primary;
+			color: $color-primary;
+			padding: 4px 8px;
+			border-radius: $radius-sm;
+		}
+
+		&__art {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	&__details {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		&__top {
+			display: flex;
+			align-items: center;
+			gap: $space-sm;
+			font-family: $font-pixel;
+			font-size: 0.72rem;
+			color: $color-accent;
+			margin-bottom: $space-xs;
+		}
+
+		h3 {
+			font-family: $font-title;
+			font-style: italic;
+			font-size: clamp(1.4rem, 2.5vw, 2rem);
+			color: $color-text;
+			margin-bottom: 2px;
+		}
+
+		&__subtitle {
+			font-family: $font-pixel;
+			font-size: 0.75rem;
+			color: $color-text-tertiary;
+			margin-bottom: $space-md;
+		}
+
+		&__desc {
+			color: $color-text-secondary;
+			font-size: 0.95rem;
+			line-height: 1.6;
+			margin-bottom: $space-lg;
+		}
+
+		&__specs {
+			display: flex;
+			flex-wrap: wrap;
+			gap: $space-lg;
+			padding: $space-md;
+			background-color: $color-surface;
+			border-radius: $radius-md;
+			border: 1px solid $color-border-light;
+			margin-bottom: $space-lg;
+
+			div {
+				display: flex;
+				flex-direction: column;
+				gap: 2px;
+
+				.spec-lbl {
+					font-family: $font-pixel;
+					font-size: 0.62rem;
+					color: $color-text-tertiary;
+				}
+
+				.spec-val {
+					font-family: $font-body;
+					font-weight: 700;
+					font-size: 0.9rem;
+					color: $color-text;
+				}
+			}
+		}
+
+		&__actions {
+			display: flex;
+			flex-wrap: wrap;
+			gap: $space-md;
+		}
+	}
+}

@@ -1,0 +1,59 @@
+[
+	{
+		"id": "alb-01",
+		"title": "Rain Over Sector 7",
+		"type": "ALBUM",
+		"genre": "Synthwave / Lo-Fi",
+		"year": 2025,
+		"duration": "38:20",
+		"artistId": "latepassenger",
+		"artistName": "LatePassenger",
+		"coverArt": "rain_sector",
+		"description": "8-track concept LP exploring quiet neon reflections in wet alleys and empty monorail platforms.",
+		"featured": true,
+		"frequency": "102.4 MHz",
+		"bpm": 92,
+		"key": "Am",
+		"links": [
+			{
+				"platformId": "spotify",
+				"name": "Spotify",
+				"url": "#"
+			},
+			{
+				"platformId": "soundcloud",
+				"name": "SoundCloud",
+				"url": "#"
+			}
+		]
+	},
+	{
+		"id": "alb-02",
+		"title": "Clandestine Frequency EP",
+		"type": "EP",
+		"genre": "Eurobeat / Electronic",
+		"year": 2024,
+		"duration": "18:45",
+		"artistId": "latepassenger",
+		"artistName": "LatePassenger",
+		"coverArt": "clandestine_ep",
+		"description": "4-track debut mini-album that launched the EuroWave Nights illegal midnight radio broadcasts.",
+		"featured": false,
+		"frequency": "104.8 MHz",
+		"bpm": 150,
+		"key": "Em",
+		"links": [
+			{
+				"platformId": "spotify",
+				"name": "Spotify",
+				"url": "#"
+			},
+			{
+				"platformId": "bandcamp",
+				"name": "Bandcamp",
+				"url": "#"
+			}
+		]
+	}
+]
+

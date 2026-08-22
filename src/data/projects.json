@@ -1,1 +1,51 @@
-[]
+[
+	{
+		"id": "proj-01",
+		"title": "Midnight Synthwave Vocal & Beat Mixing",
+		"category": "Mixing & Sound Design",
+		"description": "Full vocal tuning, analog saturation modeling, dynamic space management, and multi-bus compression for 155 BPM synthwave tracks.",
+		"tools": [
+			"REAPER",
+			"Valhalla Supermassive",
+			"Cymatics Diablo Lite",
+			"FabFilter"
+		],
+		"year": 2026,
+		"status": "COMPLETED",
+		"client": "Independent Project",
+		"badge": "STEREO MIX"
+	},
+	{
+		"id": "proj-02",
+		"title": "Eurobeat High-Loudness Analog Mastering",
+		"category": "Mastering",
+		"description": "High-density master limiting, stereo width enhancement, sub-bass alignment, and LUFS calibration for broadcast radio and club play.",
+		"tools": ["FL Studio", "Ozone", "Youlean Loudness Meter"],
+		"year": 2025,
+		"status": "COMPLETED",
+		"client": "Independent Project",
+		"badge": "-9 LUFS"
+	},
+	{
+		"id": "proj-03",
+		"title": "Custom G-Funk & Synthwave Beat Pack",
+		"category": "Beat Production",
+		"description": "Custom synth bass synthesis, 80s/90s vintage drum machine programming, and West Coast-inspired talkbox synth lead design.",
+		"tools": ["Vital", "FL Studio", "MIDI Control Surface"],
+		"year": 2025,
+		"status": "COMPLETED",
+		"client": "Independent Project",
+		"badge": "10 TRACKS"
+	},
+	{
+		"id": "proj-04",
+		"title": "Underground Radio Transmission Soundscape",
+		"category": "Sound Design & Composition",
+		"description": "CRT interface audio feedback, radio static textures, analog synth swells, and futuristic station ID jingles.",
+		"tools": ["REAPER", "Vital", "Guitar Multi-FX Processor"],
+		"year": 2026,
+		"status": "IN_PRODUCTION",
+		"client": "Independent Project",
+		"badge": "STATION SOUNDS"
+	}
+]

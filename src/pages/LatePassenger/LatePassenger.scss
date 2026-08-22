@@ -1,8 +1,129 @@
-.latePassenger {
-    min-height: 80vh;
-	padding-top: $space-3xl;
-	padding-bottom: $space-4xl;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+.artist {
+	&__hero {
+		position: relative;
+		padding-top: $space-3xl;
+		padding-bottom: $space-4xl;
+		background: linear-gradient(180deg, $color-bg-alt 0%, $color-bg 100%);
+		border-bottom: 1px solid $color-border;
+		overflow: hidden;
+
+		&__box {
+			max-width: 800px;
+		}
+
+		h1 {
+			font-family: $font-title;
+			font-style: italic;
+			font-weight: 800;
+			font-size: clamp(2.5rem, 7vw, 4.8rem);
+			color: $color-text;
+			line-height: 1;
+			margin-bottom: $space-xs;
+			text-transform: uppercase;
+			letter-spacing: -0.02em;
+
+			span {
+				font-family: $font-script;
+				font-size: clamp(2rem, 5vw, 3.5rem);
+				color: $color-accent;
+				text-transform: none;
+				display: block;
+				margin-top: -8px;
+			}
+		}
+
+		&__badge {
+			margin-bottom: $space-md;
+		}
+
+		&__tagline {
+			font-family: $font-pixel;
+			font-size: 0.88rem;
+			color: $color-primary;
+			margin-bottom: $space-lg;
+		}
+
+		&__concept {
+			font-size: 1.15rem;
+			line-height: 1.7;
+			color: $color-text-secondary;
+			margin-bottom: $space-xl;
+		}
+
+		&__genres {
+			display: flex;
+			flex-wrap: wrap;
+			gap: $space-sm;
+		}
+	}
+
+	&__archive {
+		&__tabs {
+			display: flex;
+			align-items: center;
+			gap: $space-sm;
+			border-bottom: 2px solid $color-border;
+			margin-bottom: $space-2xl;
+			overflow-x: auto;
+			padding-bottom: 2px;
+
+			.tab-btn {
+				font-family: $font-title;
+				font-style: italic;
+				font-size: 1.2rem;
+				padding: 12px 24px;
+				color: $color-text-tertiary;
+				border-bottom: 3px solid transparent;
+				transition: all $transition-fast;
+				white-space: nowrap;
+
+				&:hover {
+					color: $color-text;
+				}
+
+				&.active {
+					color: $color-text;
+					border-bottom-color: $color-accent;
+					background-color: rgba(255, 95, 191, 0.05);
+				}
+			}
+		}
+
+		&__filters {
+			display: flex;
+			flex-wrap: wrap;
+			gap: $space-sm;
+			margin-bottom: $space-2xl;
+
+			.filter-btn {
+				font-family: $font-pixel;
+				font-size: 0.72rem;
+				padding: 6px 14px;
+				border-radius: $radius-sm;
+				border: 1px solid $color-border;
+				background-color: $color-surface;
+				color: $color-text-secondary;
+				transition: all $transition-fast;
+
+				&:hover {
+					border-color: $color-primary;
+					color: $color-text;
+				}
+
+				&.active {
+					border-color: $color-accent;
+					background-color: rgba(255, 95, 191, 0.15);
+					color: $color-accent;
+				}
+			}
+		}
+	}
+
+	&__shortwave {
+		background-color: $color-bg-alt;
+	}
+
+	&__cta {
+		background-color: $color-bg;
+	}
 }
