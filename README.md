@@ -90,6 +90,8 @@ EuroWaveNights/
 │   └── ...
 ├── docs/
 │   └── ...
+├── api/
+│   └── contact.ts
 ├── src/
 │   ├── assets/
 │   ├── components/
@@ -104,7 +106,6 @@ EuroWaveNights/
 │   ├── types/
 │   ├── App.tsx
 │   └── main.tsx
-├── contact.ts
 ├── eslint.config.js
 ├── index.html
 ├── package.json
