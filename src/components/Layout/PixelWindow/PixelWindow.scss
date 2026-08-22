@@ -1,3 +1,5 @@
+@use "@/styles/mixins" as *;
+
 .pixelWindow {
 	background-color: $color-surface;
 	border: 2px solid $color-border-strong;
@@ -18,25 +20,44 @@
 		border-bottom: 2px solid $color-border;
 		padding: 8px 12px;
 		display: flex;
-		align-items: center;
-		justify-content: space-between;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 6px;
 		user-select: none;
+
+		@media (min-width: 480px) {
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+			gap: $space-sm;
+		}
 	}
 
 	&__title {
 		font-family: $font-pixel;
-		font-size: 0.72rem;
-		letter-spacing: 0.06em;
+		font-size: 0.68rem;
+		letter-spacing: 0.04em;
 		color: $color-text-secondary;
 		display: flex;
 		align-items: center;
 		gap: $space-sm;
+		word-break: break-all;
+
+		@media (min-width: 480px) {
+			font-size: 0.72rem;
+			word-break: normal;
+		}
 	}
 
 	&__controls {
 		display: flex;
 		align-items: center;
 		gap: 6px;
+		align-self: flex-end;
+
+		@media (min-width: 480px) {
+			align-self: auto;
+		}
 
 		.ctrl-btn {
 			width: 10px;
@@ -57,8 +78,12 @@
 	}
 
 	&__content {
-		padding: $space-lg;
+		padding: $space-md;
 		position: relative;
 		z-index: 1;
+
+		@include respond-to("tablet") {
+			padding: $space-lg;
+		}
 	}
 }

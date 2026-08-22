@@ -1,22 +1,35 @@
 .transmissionStatus {
 	display: inline-flex;
-	align-items: center;
-	gap: $space-md;
-	padding: 6px 14px;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: $space-xs;
+	padding: 8px 12px;
 	background-color: $color-surface;
 	border: 1px solid $color-border;
 	border-radius: $radius-md;
 	font-family: $font-pixel;
-	font-size: 0.72rem;
+	font-size: 0.68rem;
 	letter-spacing: 0.05em;
 	color: $color-text-secondary;
 	position: relative;
 	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+	max-width: 100%;
+	box-sizing: border-box;
 
-	&.status__compact {
+	@media (min-width: 520px) {
+		flex-direction: row;
+		align-items: center;
+		gap: $space-md;
+		padding: 6px 14px;
+		font-size: 0.72rem;
+	}
+
+	&.statusCompact {
 		padding: 4px 10px;
 		font-size: 0.65rem;
 		gap: $space-sm;
+		flex-direction: row;
+		align-items: center;
 	}
 
 	.statusDot__wrapper {
@@ -34,8 +47,13 @@
 	.status__meta {
 		display: flex;
 		align-items: center;
-		gap: $space-sm;
+		flex-wrap: wrap;
+		gap: $space-xs;
 		color: $color-text-tertiary;
+
+		@media (min-width: 520px) {
+			gap: $space-sm;
+		}
 
 		@media (max-width: 640px) {
 			&.hide__mobile {

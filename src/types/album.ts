@@ -16,6 +16,8 @@ export interface Album {
 	frequency?: string;
 	bpm?: number;
 	key?: string;
+	youtubeId?: string;
+	audioUrl?: string;
 	featured?: boolean;
 	tracks?: Track[];
 	links?: MediaLink[];

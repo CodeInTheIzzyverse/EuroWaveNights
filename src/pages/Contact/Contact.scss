@@ -243,11 +243,18 @@
 		background-color: $color-card;
 		border: 1px solid $color-border;
 		border-radius: $radius-lg;
-		padding: $space-xl;
+		padding: $space-lg;
 		display: flex;
 		flex-direction: column;
 		height: 100%;
 		transition: all $transition-normal;
+		width: 100%;
+		max-width: 100%;
+		box-sizing: border-box;
+
+		@include respond-to("tablet") {
+			padding: $space-xl;
+		}
 
 		&:hover {
 			background-color: $color-card-hover;

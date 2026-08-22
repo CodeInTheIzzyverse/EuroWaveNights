@@ -23,6 +23,8 @@ export interface Track {
 	frequency?: string;
 	bpm?: number;
 	key?: string;
+	youtubeId?: string;
+	audioUrl?: string;
 	links?: MediaLink[];
 }
 

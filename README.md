@@ -13,7 +13,7 @@ An underground electronic music portfolio and digital broadcast platform built a
 | Property        | Value                               |
 | --------------- | ----------------------------------- |
 | Version         | `v0.1`                              |
-| Status          | 🚧 In Development                   |
+| Status          | 🚧 In Development                    |
 | Project Type    | Music Portfolio / Creative Platform |
 | Main Brand      | EuroWave Nights                     |
 | Featured Artist | LatePassenger                       |
@@ -264,11 +264,11 @@ Never commit real API keys, tokens, credentials, or other secrets to the reposit
 
 ### Desktop
 
-*Add desktop screenshots here once the current design is finalized.*
+![Desktop Screenshot](./docs/desktop.png)
 
 ### Mobile
 
-*Add mobile screenshots here once the responsive implementation is finalized.*
+![Mobile Screenshot](./docs/mobile.png)
 
 ## Architecture and Patterns
 
