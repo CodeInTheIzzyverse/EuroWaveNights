@@ -4,13 +4,19 @@
 	background-color: $color-card;
 	border: 1px solid $color-border;
 	border-radius: $radius-lg;
-	padding: $space-xl;
+	padding: $space-md;
 	display: grid;
 	grid-template-columns: 1fr;
-	gap: $space-xl;
+	gap: $space-lg;
 	transition: all $transition-normal;
+	width: 100%;
+	max-width: 100%;
+	box-sizing: border-box;
+	overflow: hidden;
 
 	@include respond-to("tablet") {
+		padding: $space-xl;
+		gap: $space-xl;
 		grid-template-columns: 240px 1fr;
 	}
 
@@ -33,6 +39,14 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		width: 100%;
+		max-width: 100%;
+		box-sizing: border-box;
+
+		@include respond-to("tablet") {
+			width: 240px;
+			max-width: 240px;
+		}
 
 		&__badge {
 			position: absolute;
@@ -57,10 +71,14 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
+		min-width: 0;
+		width: 100%;
+		overflow: hidden;
 
 		&__top {
 			display: flex;
 			align-items: center;
+			flex-wrap: wrap;
 			gap: $space-sm;
 			font-family: $font-pixel;
 			font-size: 0.72rem;
@@ -74,6 +92,7 @@
 			font-size: clamp(1.4rem, 2.5vw, 2rem);
 			color: $color-text;
 			margin-bottom: 2px;
+			word-break: break-word;
 		}
 
 		&__subtitle {
@@ -93,7 +112,7 @@
 		&__specs {
 			display: flex;
 			flex-wrap: wrap;
-			gap: $space-lg;
+			gap: $space-md;
 			padding: $space-md;
 			background-color: $color-surface;
 			border-radius: $radius-md;
@@ -124,6 +143,16 @@
 			display: flex;
 			flex-wrap: wrap;
 			gap: $space-md;
+
+			.btn {
+				white-space: normal;
+				text-align: center;
+
+				@include respond-to("tablet") {
+					white-space: nowrap;
+				}
+			}
 		}
 	}
 }
+

@@ -15,21 +15,26 @@
 			font-family: $font-title;
 			font-style: italic;
 			font-weight: 800;
-			font-size: clamp(2.5rem, 7vw, 4.8rem);
+			font-size: clamp(1.8rem, 7vw, 4.8rem);
 			color: $color-text;
 			line-height: 1;
 			margin-bottom: $space-xs;
 			text-transform: uppercase;
 			letter-spacing: -0.02em;
+			word-break: break-word;
+			overflow-wrap: break-word;
 
 			span {
 				font-family: $font-script;
-				font-size: clamp(2rem, 5vw, 3.5rem);
+				font-size: clamp(1.4rem, 5vw, 3.5rem);
 				color: $color-accent;
 				text-transform: none;
 				display: block;
+				word-break: break-word;
+				overflow-wrap: break-word;
 			}
 		}
+
 
 		&__badge {
 			margin-bottom: $space-md;
