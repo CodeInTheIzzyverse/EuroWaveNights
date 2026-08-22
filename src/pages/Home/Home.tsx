@@ -35,6 +35,7 @@ const Home = () => {
             'EuroWave Nights - Illegal midnight electronic broadcasts from an unnamed city. Discover nocturnal synthwave, anonymous producer archives, shortwave audio streams, and audio production services.',
         keywords:
             'EuroWave Nights, synthwave, retrowave, electronic music, shortwave radio, cyberpunk audio, music production, stem mastering, LatePassenger, midnight broadcast',
+        favicon: '/images/EuroWaveNightsIsotipo.png',
     });
 
     const artists: Artist[] = artistsData as Artist[];

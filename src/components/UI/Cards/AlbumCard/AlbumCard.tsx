@@ -2,7 +2,7 @@ import type { Album } from '@/types/album';
 import './AlbumCard.scss';
 import Button from '../../Buttons/Button';
 import PlatformIcon from '../../PlatformIcon/PlatformIcon';
-import { Link } from 'react-router-dom';
+import { TransitionLink } from '@/components/UI/TransitionLink';
 
 interface AlbumCardProps {
     album: Album;
@@ -54,9 +54,9 @@ const AlbumCard = ({
                     </div>
 
                     <h3>
-                        <Link to={`/albums/${album.id}`} style={{ color: 'inherit', textDecoration: 'none' }}>
+                        <TransitionLink to={`/albums/${album.id}`} style={{ color: 'inherit', textDecoration: 'none' }}>
                             {album.title}
-                        </Link>
+                        </TransitionLink>
                     </h3>
                     <p className="albumCard__details__subtitle">{album.artistName} • RELEASED {album.year}</p>
                     <p className="albumCard__details__desc">{album.description}</p>

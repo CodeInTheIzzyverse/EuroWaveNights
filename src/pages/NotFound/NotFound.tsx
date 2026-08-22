@@ -9,6 +9,7 @@ const NotFound = () => {
         title: '404 Signal Lost | EuroWave Nights',
         description: 'Transmission frequency not found in the EuroWave Nights archives.',
         keywords: '404 not found, lost signal, EuroWave Nights frequency lost',
+        favicon: '/images/EuroWaveNightsIsotipo.png',
     });
 
     return (

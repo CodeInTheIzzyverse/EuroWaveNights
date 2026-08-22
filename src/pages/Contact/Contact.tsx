@@ -17,6 +17,7 @@ const Contact = () => {
             'Send direct transmissions to EuroWave Nights and LatePassenger for music production, audio mixing, stem mastering, custom synth tracks, and radio submissions.',
         keywords:
             'EuroWave Nights contact, LatePassenger booking, synthwave producer contact, audio mixing inquiry, stem mastering services, synthwave licensing, radio broadcast submission',
+        favicon: '/images/EuroWaveNightsIsotipo.png',
     });
 
     const {

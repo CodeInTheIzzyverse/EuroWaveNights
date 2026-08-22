@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { TransitionLink } from '@/components/UI/TransitionLink';
 import './Button.scss';
 
 export interface ButtonProps {
@@ -45,9 +45,9 @@ const Button = ({
 
     if (to) {
         return (
-            <Link to={to} className={classNames} onClick={onClick}>
+            <TransitionLink to={to} className={classNames} onClick={onClick}>
                 {content}
-            </Link>
+            </TransitionLink>
         );
     }
 

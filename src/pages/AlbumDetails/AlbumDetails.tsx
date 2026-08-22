@@ -1,5 +1,5 @@
 import useSEO from '@/hooks/useSEO';
-import { useParams, Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { useState } from 'react';
 import albumsData from '@/data/albums.json';
 import musicData from '@/data/music.json';
@@ -10,6 +10,7 @@ import Button from '@/components/UI/Buttons/Button';
 import PlatformIcon from '@/components/UI/PlatformIcon/PlatformIcon';
 import ShortwaveRadio from '@/components/UI/ShortwaveRadio/ShortwaveRadio';
 import PixelWindow from '@/components/Layout/PixelWindow/PixelWindow';
+import { TransitionLink } from '@/components/UI/TransitionLink';
 import './AlbumDetails.scss';
 
 const AlbumDetails = () => {
@@ -43,6 +44,7 @@ const AlbumDetails = () => {
         title: album ? `${album.title} | EuroWave Nights Album Archive` : 'Album Not Found',
         description: album ? album.description : 'Requested album transmission not found.',
         keywords: album ? `${album.title}, ${album.genre}, EuroWave Nights, LatePassenger` : '',
+        favicon: '/images/LatePassengerIsotipo.png',
     });
 
     if (!album) {
@@ -64,13 +66,13 @@ const AlbumDetails = () => {
             <section className="albumDetails__hero section-padding">
                 <div className="container">
                     <div className="albumDetails__header">
-                        <Link to="/latepassenger" className="back-link">
+                        <TransitionLink to="/latepassenger" className="back-link">
                             <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
                                 <path d="M0 0h24v24H0z" fill="none" />
                                 <path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 12H5m7 7l-7-7 7-7" />
                             </svg>
                             BACK TO DISCOGRAPHY
-                        </Link>
+                        </TransitionLink>
 
                         <div className="albumDetails__grid">
                             <div className="albumDetails__cover">

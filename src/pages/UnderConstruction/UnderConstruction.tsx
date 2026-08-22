@@ -7,6 +7,7 @@ const UnderConstruction = () => {
         title: '503 Frequency Calibrating | EuroWave Nights',
         description: 'This transmission frequency is currently being configured by EuroWave Nights broadcast engineers.',
         keywords: 'EuroWave Nights calibration, under construction, signal interrupted',
+        favicon: '/images/EuroWaveNightsIsotipo.png',
     });
 
     return (

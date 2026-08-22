@@ -32,6 +32,7 @@ const LatePassenger = () => {
             'Explore the complete discography, nocturnal synthwave releases, collaborative projects, and production gear archive of LatePassenger transmitting on 104.2 FM.',
         keywords:
             'LatePassenger, anonymous electronic music, synthwave albums, retrowave tracks, cyberpunk soundscapes, electronic music projects, analog synth gear',
+        favicon: '/images/LatePassengerIsotipo.png',
     });
 
     const artist: Artist = artistsData[0] as Artist;

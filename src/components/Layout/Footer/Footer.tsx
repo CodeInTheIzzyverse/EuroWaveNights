@@ -2,7 +2,7 @@ import { BRAND } from '@/constants/brand';
 import TransmissionStatus from '@/components/UI/TransmissionStatus/TransmissionStatus';
 import MasterLogo from '@/assets/EuroWaveNights/MasterLogo.png';
 import './Footer.scss';
-import { Link } from 'react-router-dom';
+import { TransitionLink } from '@/components/UI/TransitionLink';
 import { PATHS } from '@/constants/routes';
 import platformsData from '@/data/platforms.json';
 import type { Platform } from '@/types/channel';
@@ -40,11 +40,11 @@ const Footer = () => {
                     <h4>[ TRANSMISSION NETWORK ]</h4>
 
                     <ul className="footer__links">
-                        <li><Link to={PATHS.HOME}>Home Station</Link></li>
-                        <li><Link to={PATHS.LATE_PASSENGER}>LatePassenger Archive</Link></li>
+                        <li><TransitionLink to={PATHS.HOME}>Home Station</TransitionLink></li>
+                        <li><TransitionLink to={PATHS.LATE_PASSENGER}>LatePassenger Archive</TransitionLink></li>
                         <li><a href="/#services">Services & Production</a></li>
-                        <li><Link to={PATHS.CONTACT}>Contact Terminal</Link></li>
-                        <li><Link to={PATHS.LINKS}>Digital Transmission Links</Link></li>
+                        <li><TransitionLink to={PATHS.CONTACT}>Contact Terminal</TransitionLink></li>
+                        <li><TransitionLink to={PATHS.LINKS}>Digital Transmission Links</TransitionLink></li>
                     </ul>
                 </article>
             </section>

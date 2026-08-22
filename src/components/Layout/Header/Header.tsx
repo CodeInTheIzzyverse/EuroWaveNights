@@ -1,12 +1,23 @@
 import { useEffect, useState } from 'react';
 import { PATHS } from '@/constants/routes';
-import { NavLink } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
+import { TransitionNavLink } from '@/components/UI/TransitionLink';
 import './Header.scss';
 import Wordmark from '@/assets/EuroWaveNights/Wordmark.png';
+import LatePassengerLogo from '@/assets/LatePassenger/Logo.png';
+
+const LATE_PASSENGER_ROUTES = [PATHS.LATE_PASSENGER, '/albums/'];
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
+    const location = useLocation();
+
+    const isLatePassengerRoute = LATE_PASSENGER_ROUTES.some(
+        (route) => location.pathname === route || location.pathname.startsWith(route)
+    );
+
+    const brandLogo = isLatePassengerRoute ? LatePassengerLogo : Wordmark;
 
     useEffect(() => {
         const handleScroll = () => {
@@ -30,42 +41,42 @@ const Header = () => {
     return (
         <header className={isScrolled ? "header header--scrolled" : "header"}>
             <section className="header__brand">
-                <NavLink to={PATHS.HOME} onClick={closeMenu}>
-                    <img src={Wordmark} alt="" />
-                </NavLink>
+                <TransitionNavLink to={PATHS.HOME} onClick={closeMenu}>
+                    <img src={brandLogo} alt="" />
+                </TransitionNavLink>
             </section>
 
             <section className={`header__content ${isMenuOpen ? "header__content--open" : ""}`}>
                 <nav className="header__menu">
                     <ul>
                         <li>
-                            <NavLink
+                            <TransitionNavLink
                                 to={PATHS.HOME}
                                 onClick={closeMenu}
                                 className={({ isActive }) => isActive ? "header__link header__link--active" : "header__link"}
                             >
                                 Home
-                            </NavLink>
+                            </TransitionNavLink>
                         </li>
 
                         <li>
-                            <NavLink
+                            <TransitionNavLink
                                 to={PATHS.LATE_PASSENGER}
                                 onClick={closeMenu}
                                 className={({ isActive }) => isActive ? "header__link header__link--active" : "header__link"}
                             >
                                 LatePassenger
-                            </NavLink>
+                            </TransitionNavLink>
                         </li>
 
                         <li>
-                            <NavLink
+                            <TransitionNavLink
                                 to={PATHS.CONTACT}
                                 onClick={closeMenu}
                                 className={({ isActive }) => isActive ? "header__link header__link--active" : "header__link"}
                             >
                                 Contact
-                            </NavLink>
+                            </TransitionNavLink>
                         </li>
                     </ul>
                 </nav>

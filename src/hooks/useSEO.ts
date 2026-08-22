@@ -4,9 +4,10 @@ interface SEOProps {
 	title: string;
 	description?: string;
 	keywords?: string;
+	favicon?: string;
 }
 
-const useSEO = ({ title, description, keywords }: SEOProps) => {
+const useSEO = ({ title, description, keywords, favicon }: SEOProps) => {
 	useEffect(() => {
 		document.title = title;
 
@@ -33,7 +34,19 @@ const useSEO = ({ title, description, keywords }: SEOProps) => {
 				document.head.appendChild(metaKeys);
 			}
 		}
-	}, [title, description, keywords]);
+
+		if (favicon) {
+			let link = document.querySelector<HTMLLinkElement>('link[rel="icon"]');
+			if (link) {
+				link.href = favicon;
+			} else {
+				link = document.createElement("link");
+				link.rel = "icon";
+				link.href = favicon;
+				document.head.appendChild(link);
+			}
+		}
+	}, [title, description, keywords, favicon]);
 };
 
 export default useSEO;

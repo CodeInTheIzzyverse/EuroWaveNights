@@ -14,6 +14,7 @@ const Links = () => {
             'Official streaming links, social channels, and clandestine broadcast frequencies for LatePassenger and EuroWave Nights across Spotify, YouTube, SoundCloud, Bandcamp, Instagram, and TikTok.',
         keywords:
             'LatePassenger links, EuroWave Nights streaming, synthwave Spotify playlist, SoundCloud demos, Bandcamp music, electronic music links',
+        favicon: '/images/EuroWaveNightsIsotipo.png',
     });
 
     return (
